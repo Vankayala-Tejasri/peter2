@@ -1,0 +1,58 @@
+<div class="container1">
+    <div class="container">
+        <div class="card-body">
+            <div class="message">
+                <div class="alert alert-success my-2" *ngIf="!(SuccessMsg =='')">{{SuccessMsg}}</div>
+                <div class="alert alert-danger my-2" *ngIf="!(ErrorMsg =='')">{{ErrorMsg}}</div>
+                </div>
+            <form #insertForm="ngForm" (ngSubmit)="Insert(insertForm)">
+                <h1 class="form-title">Sign Up</h1>
+                <input type="Username" placeholder="Username" name="username" #username="ngModel" ngModel required>
+                <br />
+                <span *ngIf="username.invalid && username.touched" style="color:rgb(249, 71, 71)"> ** Please Enter
+                    Username **</span>
+                <br />
+                <input type="tel" placeholder="Mobilenumber" name="mobilenumber" #mobilenumber="ngModel" 
+                    ngModel required>
+                <br />
+                <span *ngIf="mobilenumber.invalid && mobilenumber.touched" style="color:rgb(249, 71, 71)"> ** Please
+                    Enter Mobilenumber **</span>
+                <br />
+                <input type="number" placeholder="Aadharnumber" name="aadharnumber" #aadharnumber="ngModel" ngModel
+                    required>
+                <br />
+                <span *ngIf="aadharnumber.invalid && aadharnumber.touched" style="color:rgb(249, 71, 71)"> ** Please
+                    Enter Aaadhar Number **</span>
+                <br />
+                <input type="number" placeholder="Age" name="age" #age="ngModel" ngModel required>
+                <br />
+                <span *ngIf="age.invalid && age.touched" style="color:rgb(249, 71, 71)"> ** Please Enter Age
+                    **</span>
+                <br />
+                <input type="email" placeholder="Email " name="email" #email="ngModel" ngModel required email>
+                <br />
+                <span *ngIf="email.invalid && email.touched" style="color:rgb(249, 71, 71)"> ** Please Enter Email
+                    **</span>
+                <br />
+                <input type="password" placeholder="Password" name="password" #password="ngModel" ngModel required>
+                <br />
+                <span *ngIf="password.invalid && password.touched" style="color:rgb(249, 71, 71)"> ** Please Enter
+                    Password **</span>
+                <br />
+                <div class="geni">
+                <div class="gen">
+                <input type="radio" name="gender" #gender="ngModel" ngModel value="Female" checked required>Female
+                <input type="radio" name="gender" value="Male" required #gender="ngModel" ngModel>Male
+                <input type="radio" name="gender" value="Others" required #gender="ngModel" ngModel>Others
+                </div>
+                <span *ngIf="gender.invalid && gender.invalid" style="color:rgb(249, 71, 71)">**Please select Gender**</span>
+                </div>
+                <div class="btn">
+                    <input type="submit" value="Register" class="btn btn-success my-2" [disabled]="insertForm.invalid">&nbsp;&nbsp;
+                </div>
+                <p class="message">Already  registered? <a routerLink="/login" routerLinkActive="active">Sign In</a></p>
+            </form>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>

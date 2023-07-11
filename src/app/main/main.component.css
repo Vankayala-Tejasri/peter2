@@ -1,0 +1,36 @@
+.navbar-brand{
+    display: flex;
+    font-size: 18px;
+  }
+  .form-inline{
+    display: flex;
+  }
+  .nav-link{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 18px;
+    margin-right: px;
+    font-size: 18px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33%;
+    padding: 59px;
+  }
+  
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .content{
+    font-size: 25px;
+  }
+  .colour{
+    color: darkmagenta;
+  } 

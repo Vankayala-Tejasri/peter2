@@ -1,0 +1,25 @@
+<app-home></app-home>
+<p>read works!</p>
+<div class="par">
+<input type="text" [(ngModel)]="User.disease" name="disease" #disease="ngModel" required ngModel>&nbsp;
+<br/>
+<button type="submit"  class="btn btn-success my-2" (click)="Read()" >Read</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+<div *ngIf="canShowData">
+
+    <hr> 
+    
+    <table >
+        <tr>
+          <th colspan="10" style="text-align: center;"><h4>Diseases with Symptoms</h4></th>
+        </tr>
+        <tr>
+          <td colspan="4">disease</td>
+          <td colspan="6">{{User.disease}}</td>
+        </tr>
+        <tr>
+          <td colspan="4">Symptoms</td>
+          <td colspan="6">{{User.symptoms}}</td>
+        </tr>
+        
+      </table>

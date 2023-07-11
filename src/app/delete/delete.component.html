@@ -1,0 +1,15 @@
+<app-home></app-home>
+<form>
+    <div class="message">
+        <div class="alert alert-success my-2" *ngIf="!(SuccessMsg =='')">{{SuccessMsg}}</div>
+        <div class="alert alert-danger my-2" *ngIf="!(ErrorMsg =='')">{{ErrorMsg}}</div>
+        </div>
+    <div class="para">
+    <input type="text" name="disease"  [(ngModel)]="User.disease">
+    <br/>
+    <br/>
+    <br/>
+    <input type="submit" value="Delete" class="btn btn-danger" (click)="Delete()">&nbsp;&nbsp;
+    </div>
+
+</form>

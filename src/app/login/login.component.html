@@ -1,0 +1,31 @@
+ <div class="container1">
+<div class="container">
+    <div class="card-body">
+<form  #insertForm="ngForm">
+  <h1 class="form-title">Sign In</h1>
+        <input type="email" placeholder="Email" name="email" #email="ngModel" [(ngModel)]="User.email" email ngModel required>
+        <br/>
+    <span *ngIf="email.invalid && email.touched" style="color:rgb(249, 71, 71)"> ** Please Enter Email id **</span>
+    <br/>
+
+
+
+        <input type="password" placeholder="Password" name="password" #password="ngModel" [(ngModel)]="User.password" ngModel required>
+        <br/>
+        <span *ngIf="password.invalid && password.touched" style="color:rgb(249, 71, 71)"> ** Please Enter Password **</span>
+        <br/>
+
+<div class="btn">
+        <input type="submit" value="Login" class="btn btn-success my-2"  [disabled]="insertForm.invalid" (click)="Read()" routerLink="/home" routerLinkActive="active">&nbsp;&nbsp;
+</div>
+        <p class="message">Not registered? <a routerLink="/register" routerLinkActive="active">Create an account</a></p>
+      </form>
+    </div>
+</div>
+  <router-outlet></router-outlet>
+</div>
+
+
+
+
+  

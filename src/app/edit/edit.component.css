@@ -1,0 +1,71 @@
+.para {
+  text-align: center;
+ align-items: center;
+ margin-top: 40px;
+}
+input[type="text"]{
+  width:25%;
+  height: 40px;
+  border: 1.5px solid black;
+  border-radius: 8px;
+  outline: invert;
+  padding: 0 10px;
+}
+
+.container {
+  text-align: center;
+  margin-top: 60px;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px grey;
+  width: 40%;
+  object-position: center;
+  background-image: url("https://www.venops.com/wp-content/uploads/bb-plugin/cache/open_payments_ftd-square.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+input {
+
+  font-size: 15px;
+  height: 40px;
+  width: 85%;
+  border: 1.5px solid black;
+  border-radius: 8px;
+  outline: invert;
+  padding: 0 10px;
+
+}
+
+.message {
+  color: aliceblue
+}
+
+.btn {
+  width: 25;
+}
+
+a {
+  color: rgb(2, 38, 48)
+}
+
+input:invalid {
+  border-color: rgb(236, 42, 84);
+}
+
+.gen {
+  display: flex;
+  justify-tracks: initial;
+  padding: 10px;
+  margin: 10px 5px;
+  color: black;
+}
+
+input[type='radio'] {
+  border: 0px;
+  width: 50%;
+  height: 1.5em;
+  justify-content: baseline;
+
+}

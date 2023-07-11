@@ -1,0 +1,75 @@
+<app-home></app-home>
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <h4 style="color:cornflowerblue">Edit Your Profile</h4>
+        </div>
+    </div>
+</div>
+<form #insertForm="ngForm">
+    
+    
+    <div class="para">
+        <input type="text" name="email" [(ngModel)]="User.email">&nbsp;
+        <button type="submit" value="Get" class="btn btn-success my-2"
+            (click)="Read()">Get</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+
+    <div *ngIf="canShowData">
+        <div class="container">
+            <div class="card-body">
+                <div class="message">
+                    <div class="alert alert-success my-2" *ngIf="!(SuccessMsg =='')">{{SuccessMsg}}</div>
+                    <div class="alert alert-danger my-2" *ngIf="!(ErrorMsg =='')">{{ErrorMsg}}</div>
+                </div>
+                <input type="Username" name="username" placeholder="Username" [(ngModel)]="User.username" #username="ngModel"  required>
+                <br />
+                <span *ngIf="username.invalid && username.touched" style="color:rgb(249, 71, 71)"> ** Please Enter
+                    Username **</span>
+                <br />
+                <input type="tel" placeholder="Mobilenumber" name="mobilenumber" [(ngModel)]="User.mobilenumber"  #mobilenumber="ngModel"  required>
+                <br />
+                <span *ngIf="mobilenumber.invalid && mobilenumber.touched" style="color:rgb(249, 71, 71)"> ** Please
+                    Enter Mobilenumber **</span>
+                <br />
+                <input type="number" placeholder="Aadharnumber" name="aadharnumber" #aadharnumber="ngModel" [(ngModel)]="User.aadharnumber" required>
+                <br />
+                <span *ngIf="aadharnumber.invalid && aadharnumber.touched" style="color:rgb(249, 71, 71)"> ** Please
+                    Enter Aaadhar Number **</span>
+                <br />
+                <input type="number" placeholder="Age" name="age" [(ngModel)]="User.age" #age="ngModel" required>
+                <br />
+                <span *ngIf="age.invalid && age.touched" style="color:rgb(249, 71, 71)"> ** Please Enter Age
+                    **</span>
+                <br />
+                <input type="email" placeholder="Email " name="email" email [(ngModel)]="User.email" #email="ngModel" required>
+                <br />
+                <span *ngIf="email.invalid && email.touched" style="color:rgb(249, 71, 71)"> ** Please Enter Email
+                    **</span>
+                <br />
+                <input type="password" placeholder="Password" name="password" [(ngModel)]="User.password" #password="ngModel" required>
+                <br />
+                <span *ngIf="password.invalid && password.touched" style="color:rgb(249, 71, 71)"> ** Please Enter
+                    Password **</span>
+                <br />
+                <div class="geni">
+                    <div class="gen">
+                        <input type="radio" name="gender" [(ngModel)]="User.gender" #gender="ngModel" required checked>Female
+                        <input type="radio" name="gender" value="Male" [(ngModel)]="User.gender" #gender="ngModel">Male
+                        <input type="radio" name="gender" value="Others" [(ngModel)]="User.gender" #gender="ngModel">Others
+                    </div>
+                    <span *ngIf="gender.invalid && gender.invalid" style="color:rgb(249, 71, 71)">**Please select Gender**</span>
+
+                </div>
+        
+                        <div class="btn">
+                            <input type="submit" value="Update" class="btn btn-success my-2"
+                                (click)="Update()" [disabled]="insertForm.invalid">
+                            <input type="submit" value="Delete" class="btn btn-danger" (click)="Delete()">
+
+                        </div>
+                    
+                
+            </div>
+        </div>
+    </div>

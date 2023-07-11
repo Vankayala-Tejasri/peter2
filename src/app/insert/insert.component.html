@@ -1,0 +1,32 @@
+<app-home></app-home>
+<form #insertForm="ngForm" (ngSubmit)="Insert(insertForm)">
+        <div class="message">
+    <div class="alert alert-success my-2" *ngIf="!(SuccessMsg =='')">{{SuccessMsg}}</div>
+    <div class="alert alert-danger my-2" *ngIf="!(ErrorMsg =='')">{{ErrorMsg}}</div>
+    </div>
+    <div class="para">
+    <label>Symptoms: </label>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+
+    <input type="text" name="symptoms" required   #symptoms="ngModel" ngModel>
+    <br/>
+    <span *ngIf="symptoms.invalid && symptoms.touched" style="color:red">Please Enter Symptoms</span>
+    <br/>
+    <label>Disease: </label>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+
+    <input type="text"  required  name="disease" #disease="ngModel" ngModel>
+    <br/>
+    <span *ngIf="disease.invalid && disease.touched" style="color:red">Please Enter Disease</span>
+    <br/>
+    <div class="val">
+    <input type="submit" value="Insert" class="btn btn-success my-2"  [disabled]="insertForm.invalid">&nbsp;&nbsp;
+    </div>
+    </div>
+</form>

@@ -1,0 +1,12 @@
+.form-inline{
+    display:flex;
+}
+.nav-link{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 14px;
+    margin-right: 14px;
+    font-size: 17px;
+    color:black;
+  }
+  
