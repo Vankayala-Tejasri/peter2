@@ -1,5 +1,5 @@
 .container{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 ul{
     list-style: none;
@@ -9,4 +9,7 @@ ul{
 }
 li{
     padding:7px;
+}
+.card-body{
+    margin-top:-40px;
 }

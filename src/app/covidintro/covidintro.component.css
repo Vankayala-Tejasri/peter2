@@ -1,0 +1,161 @@
+ 
+ div.gallery{
+    border: 1.5px solid #a5a3a3;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #5d5d5d;
+  }
+  
+  /* div.gallery img {
+    width: 100%;
+    height: 85%;
+  } */
+  
+  div.desc {
+    padding: 35px;
+    text-align: center;
+    justify-content: space-around;
+
+  }
+  
+  /* * {
+    box-sizing: border-box;
+  } */
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    padding: 5px;
+    margin-right: 0px;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    justify-content: space-around;
+
+  }
+  /* body {
+    font-family: "Lato", sans-serif;
+  } */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    text-align: center;
+    justify-content: space-around;
+
+  }
+  .main h1{
+    text-align: center;
+    color: #bb8625;
+    justify-content: center;
+  }
+  .main ul{
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 23px;
+  }
+  .container {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  img {
+    max-width: 170%;
+    max-height:70%;
+  }
+  
+  .text {
+    font-size: 18px;
+    padding-left: 125px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 70px;
+    text-align: left;
+  }
+  
+  .size{
+    width: 870px;
+    height: 710px; 
+    display: flex;
+    
+  }
+  .size h4{
+    padding-right: 26px;
+    padding-left: 10px;
+    padding-top: 130px;
+    justify-content: right;
+  }
+  .head h1{
+    text-align: center;
+
+  }
+  .head ul{
+    font-size: 18px;
+  }
+ .image{
+  margin-right:100px;
+  margin-left: -200px;
+  width: 70vw;
+ }
+ .btn-info{
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+ }
+ .desc{
+  font-size: 18px;
+ }
+ /* .container{
+    width:90%
+ } */
+ .card{
+  border:none
+ }
+ a{
+  text-decoration: none;
+  color: black;
+ }
+ .car{
+  font-size: 18px;
+  margin-bottom: 20px;
+  display:flex;
+  /* flex-flow: wrap; */
+      flex: 100%;
+      margin-bottom: 40px;
+  padding:0px 10px;
+ }
+ /* .car img{
+  margin-right:0px;
+ }
+ .car p{
+  margin-left:-10px;
+ }  */
+ .container{
+  width:110%;
+ }
+ .card-body{
+  margin-left: 10px;
+ }

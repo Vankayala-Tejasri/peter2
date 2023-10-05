@@ -1,0 +1,20 @@
+.car{
+    display: flex;
+}
+.cord{
+    margin-left: 400px;
+}
+.card-body{
+    font-size: 17px;
+}
+.card{
+    border:none;
+}
+.btn2{
+    margin-right: 800px;
+    
+  }
+  .item{
+    list-style-type: none;
+    display: flex;
+  }

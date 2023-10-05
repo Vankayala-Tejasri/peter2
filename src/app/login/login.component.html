@@ -1,8 +1,16 @@
+ <html>
  <div class="container1">
 <div class="container">
     <div class="card-body">
+      <div class="message">
+        <div class="alert alert-success my-2" *ngIf="!(SuccessMsg =='')">{{SuccessMsg}}</div>
+        <div class="alert alert-danger my-2" *ngIf="!(ErrorMsg =='')">{{ErrorMsg}}</div>
+        </div>
+        <br>
+        <br>
 <form  #insertForm="ngForm">
   <h1 class="form-title">Sign In</h1>
+  
         <input type="email" placeholder="Email" name="email" #email="ngModel" [(ngModel)]="User.email" email ngModel required>
         <br/>
     <span *ngIf="email.invalid && email.touched" style="color:rgb(249, 71, 71)"> ** Please Enter Email id **</span>
@@ -10,22 +18,31 @@
 
 
 
-        <input type="password" placeholder="Password" name="password" #password="ngModel" [(ngModel)]="User.password" ngModel required>
+        <input type="password" placeholder="Password" name="password" #password="ngModel" [(ngModel)]="User.password" minlength="4" maxlength="20" required>
         <br/>
         <span *ngIf="password.invalid && password.touched" style="color:rgb(249, 71, 71)"> ** Please Enter Password **</span>
         <br/>
 
 <div class="btn">
-        <input type="submit" value="Login" class="btn btn-success my-2"  [disabled]="insertForm.invalid" (click)="Read()" routerLink="/home" routerLinkActive="active">&nbsp;&nbsp;
+        <input type="submit" value="Login" class="btn btn-success my-2"  [disabled]="insertForm.invalid" (click)="Read()" >&nbsp;&nbsp;
 </div>
         <p class="message">Not registered? <a routerLink="/register" routerLinkActive="active">Create an account</a></p>
       </form>
     </div>
+
+<asl-google-signin-button type='icon' size='large' *ngIf="!user" value="Sign In" style="align-items: center;"></asl-google-signin-button>  
+<div *ngIf="user">
+  <img src="{{ user.photoUrl }}">
+  <p>{{user.name}}</p>
+  <p>{{user.email}}</p>
+  <p>{{user.password}}</p>
 </div>
   <router-outlet></router-outlet>
 </div>
+ </div>
 
 
 
 
   
+ </html>

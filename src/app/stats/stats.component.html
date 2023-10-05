@@ -1,0 +1,45 @@
+<app-home></app-home>
+<br>
+<br>
+<h1 align="center">COVID-19 Statistics</h1><br>
+
+<br>
+<br>
+
+<ul class="item">
+  <li class="btn2"><button class="btn btn-primary" type="submit" (click)="blog()"> Previous</button></li>
+<li class="btn1">
+  <button class="btn btn-primary" type="submit" (click)="log()">Next</button></li>
+</ul>
+<br>
+<canvas id="linechart" width="100" height="0"></canvas>
+
+<br><br>
+
+
+<div class="statistics-container">
+  <div class="statistics-card">
+    <h2>Total Cases</h2>
+    <p>{{ totalCases }}</p>
+  </div>
+
+  <div class="statistics-card">
+    <h2>Total Deaths</h2>
+    <p>{{ totalDeaths }}</p>
+  </div>
+
+  <div class="statistics-card">
+    <h2>Total Recovered</h2>
+    <p>{{ totalRecovered }}</p>
+  </div>
+</div>
+
+<div style="display: block;">
+    <canvas baseChart width="100" height="0"
+      [datasets]="lineChartData"
+      [labels]="lineChartLabels"
+      [options]="lineChartOptions"
+      [legend]="lineChartLegend"
+      chartType="lineChartType">
+    </canvas>
+  </div>

@@ -1,0 +1,23 @@
+img{
+    display:inline-block;
+    margin-left: 50px;
+    margin-right: 90px;
+    border: 1px solid black;
+}
+.card{
+    border: none;
+}
+li{
+    font-size: 17px;
+}
+.container{
+
+}
+.btn2{
+    margin-right: 800px;
+    
+  }
+  .item{
+    list-style-type: none;
+    display: flex;
+  }

@@ -23,8 +23,13 @@ img{
 
 }
 .container{
+    margin-top: 30px;
     background-image: url("https://wallpaperaccess.com/full/624121.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border: 1px solid black;
+    border-radius: 2%;
+    background-clip: border-box;
+    -webkit-line-break:after-white-space;
 }

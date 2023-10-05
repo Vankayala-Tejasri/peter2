@@ -12,14 +12,14 @@
                 <span *ngIf="username.invalid && username.touched" style="color:rgb(249, 71, 71)"> ** Please Enter
                     Username **</span>
                 <br />
-                <input type="tel" placeholder="Mobilenumber" name="mobilenumber" #mobilenumber="ngModel" 
+                <input type="tel" placeholder="Mobilenumber" name="mobilenumber" #mobilenumber="ngModel" minlength="0" maxlength="10"
                     ngModel required>
                 <br />
                 <span *ngIf="mobilenumber.invalid && mobilenumber.touched" style="color:rgb(249, 71, 71)"> ** Please
                     Enter Mobilenumber **</span>
                 <br />
-                <input type="number" placeholder="Aadharnumber" name="aadharnumber" #aadharnumber="ngModel" ngModel
-                    required>
+                <input type="tel" placeholder="Aadharnumber" name="aadharnumber" #aadharnumber="ngModel"  minlength="0" maxlength="12" 
+                ngModel required>
                 <br />
                 <span *ngIf="aadharnumber.invalid && aadharnumber.touched" style="color:rgb(249, 71, 71)"> ** Please
                     Enter Aaadhar Number **</span>
@@ -34,7 +34,7 @@
                 <span *ngIf="email.invalid && email.touched" style="color:rgb(249, 71, 71)"> ** Please Enter Email
                     **</span>
                 <br />
-                <input type="password" placeholder="Password" name="password" #password="ngModel" ngModel required>
+                <input type="password" placeholder="Password" name="password" #password="ngModel" ngModel required minlength="6" maxlength="20">
                 <br />
                 <span *ngIf="password.invalid && password.touched" style="color:rgb(249, 71, 71)"> ** Please Enter
                     Password **</span>

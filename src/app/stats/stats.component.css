@@ -1,0 +1,55 @@
+/* #linechart{
+    width:10%;
+    height:10%
+} */
+
+/* .chart-container {
+    margin-top: 50px;
+  }
+   */
+
+
+
+  .statistics-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .statistics-card {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #ccc;
+  }
+  
+  .statistics-card h2 {
+    margin-top: 0;
+  }
+  
+  .statistics-card p {
+    /* font-size: 12px; */
+    /* font-weight: bold; */
+    margin: 10px 0;
+  }
+  
+
+
+  :host {
+    display: block;
+    width: 100%;
+  }
+  .btn2{
+    margin-right: 850px;
+    
+  }
+  .item{
+    list-style-type: none;
+    display: flex;
+  }
+   /* :host(canvas){
+    width: 10px;
+    height: 0px;
+  }  */

@@ -1,0 +1,59 @@
+.img_deg
+{
+  float:right;
+  width:50%;
+}
+.pos_cen
+{
+  width:95%;
+  left:0%;
+  margin-bottom: 20px;
+  font-size: 18px;
+  justify-content: center;
+  position: relative; 
+}
+.hi{
+    width:95%;
+    left:0%;
+    margin-bottom: 20px;
+    font-size:18px;
+    justify-content: center;
+    position: relative; 
+}
+.hello{
+    width: 95%;
+    left:0%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    justify-content: center;
+    position: relative;
+}
+.who{
+    width: 95%;
+    left:0%;
+    margin-bottom: 20px;
+    font-size:18px;
+    justify-content: center;
+    position: relative;
+}
+.where{
+    width: 95%;
+    left:0%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    justify-content: center;
+    position: relative;
+}
+/* .container{
+    border: 0.5px solid black;
+} */
+h1{
+    font-family: garamond serif;
+    color:mediumvioletred;
+}
+.img_deg{
+    opacity: 0.5;
+    }
+    .img_deg:hover {
+        opacity:1.0;
+    }

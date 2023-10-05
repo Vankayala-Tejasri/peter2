@@ -43,8 +43,9 @@ export class RegisterService {
     email:string,Details:Register) {
     return this.http.put(`${this.url }register/Update${email}`,Details,{headers:this.headers}
     );
-}
+  
 }
 
 
+}
 

@@ -1,16 +1,16 @@
 body {
     margin-top: 20px;
   }
-  .cards{
+  /* .cards{
     text-align: center;
-  }
+  } */
   .card {
     border: none;
   }
   
-  .cards2{
+  /* .cards2{
     display:flex
-  }
+  } */
   .card-img {
     border: 8px solid black;
     border-radius: 0;
@@ -76,7 +76,7 @@ body {
       
     }
   }
-  .overlay {
+  /* .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -87,7 +87,7 @@ body {
     opacity: 0;
     transition: .5s ease;
     background-color: #008CBA;
-  }
+  } */
   
   .container:hover .overlay {
     opacity: 1;
@@ -103,4 +103,15 @@ body {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+  /* .btn1{
+    margin-left:0px;
+  } */
+  .btn2{
+    margin-right: 900px;
+    
+  }
+  .item{
+    list-style-type: none;
+    display: flex;
   }

@@ -1,0 +1,46 @@
+.img_deg
+{
+  float:right;
+  width:40%;
+}
+.pos_cen
+{
+  width:70%;
+  left:15%;
+  margin-bottom: 20px;
+  font-size: larger;
+  justify-content: center;
+  position: relative; 
+}
+.hi{
+    width:70%;
+    left:15%;
+    margin-bottom: 20px;
+    font-size: larger;
+    justify-content: center;
+    position: relative; 
+}
+.hello{
+    width: 70%;
+    left:15%;
+    margin-bottom: 20px;
+    font-size: larger;
+    justify-content: center;
+    position: relative;
+}
+.who{
+    width: 70%;
+    left:15%;
+    margin-bottom: 20px;
+    font-size: larger;
+    justify-content: center;
+    position: relative;
+}
+.where{
+    width: 70%;
+    left:15%;
+    margin-bottom: 20px;
+    font-size: larger;
+    justify-content: center;
+    position: relative;
+}

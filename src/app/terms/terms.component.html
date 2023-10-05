@@ -1,0 +1,42 @@
+<app-home></app-home>
+<br><br><br>
+<div class="bg">
+<div class="mar"><br><br>
+<h1>Terms and Conditions</h1>
+<br><br>
+<div class="para">Before using the checkup,please read the Terms and conditions and remember:</div>
+&nbsp;
+<ul>
+<li>
+<p><b>Checkup isn't a diagnosis.</b>It's only for your information and not a qualified medical opinion.</p></li>
+<li><p><b>Checkup isn't for emergencies.</b> Your local emergency number right away when there's a health emergency.</p></li>
+<li><p><b>Your data is safe.</b> Information you give won't be shared or used to identify you.</p>
+</li>
+</ul>
+<div class="par">
+<form (ngSubmit)="submitForm()" #doctorForm="ngForm">
+    <input type="checkbox" class="c1" name="checkbox" required #checkbox="ngModel" ngModel value="Text" required ><label for="Text">I read and accept Terms and Conditions</label>
+    <br>
+    <span *ngIf="checkbox.invalid && checkbox.touched" style="color:red">please accept the terms and conditions</span>
+   
+    <br>
+    <input type="checkbox" class="c2" name="checkbox1"  #checkbox1="ngModel" ngModel value="Text" required><label for="Text">I agree for my health information to be used for the interview.</label>
+    <br>
+    <span *ngIf="checkbox1.invalid && checkbox1.touched" style="color:red">please accept the terms and conditions</span>
+   
+</form>
+</div><br>
+<br>
+<br>
+
+<!-- <button class="btn btn-primary" id="btn1"(click)="log()">Back</button>
+
+
+<button type="submit" class="btn btn-primary" [disabled]="!doctorForm.valid">Next</button>
+   <br><br><br></div></div>-->
+   <ul class="item"> 
+    <li class="btn2"><button class="btn btn-primary" type="submit" (click)="log()"> Previous</button></li>
+<li class="btn1">
+    <button class="btn btn-primary" type="submit" [disabled]="doctorForm.invalid" (click)="log()">Next</button></li>
+  </ul>
+</div></div>

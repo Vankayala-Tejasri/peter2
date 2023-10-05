@@ -1,0 +1,53 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-style: itallic; */
+    color:mediumvioletred;
+    
+  }
+  p {
+    margin-top: 10px;
+    font-size:18px;
+    /* font-style: italic; */
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    /* font-style: italic; */
+    
+  }
+  li {
+    margin-bottom: 10px;
+    font-size: 23px;
+    /* font-style: italic; */
+
+
+  }
+  h5{
+
+    /* font-style: italic; */
+
+  }
+  img {
+background-image: "https://wallpaperaccess.com/bright-blue-plain";   
+} 
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+h6{
+  font-size: 18px;
+  /* font-style: italic; */
+
+}

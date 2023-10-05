@@ -1,0 +1,67 @@
+.img_deg
+{
+  float:right;
+  width:50%;
+}
+.pos_cen
+{
+  width:80%;
+  left:10%;
+  margin-bottom: 20px;
+  font-size: 18px;
+  justify-content: center;
+  position: relative; 
+}
+.madhavi{
+    width:80%;
+    left:10%;
+    margin-bottom: 20px;
+    font-size:18px;
+    justify-content: center;
+    position: relative; 
+}
+.harshitha{
+    width: 80%;
+    left:10%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    justify-content: center;
+    position: relative;
+}
+.gayathri{
+    width: 80%;
+    left:10%;
+    margin-bottom: 20px;
+    font-size:18px;
+    justify-content: center;
+    position: relative;
+}
+.suvarshitha{
+    width: 80%;
+    left:10%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    justify-content: center;
+    position: relative;
+}
+/* .container{
+    border: 0.5px solid black;
+} */
+h1{
+    font-family: garamond serif;
+    color:mediumvioletred;
+}
+.keerthi{
+    width:80%;
+    left:10%;
+    margin-bottom: 20px;
+    font-size: larger;
+    justify-content: center;
+    position: relative;
+}
+.img_deg{
+    opacity: 0.5;
+    }
+    .img_deg:hover {
+        opacity:1.0;
+    }

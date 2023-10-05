@@ -2,11 +2,22 @@
     display:flex;
 }
 .nav-link{
-    padding-left: 50px;
-    padding-right: 50px;
     margin-left: 14px;
     margin-right: 14px;
     font-size: 17px;
-    color:black;
+    
   }
-  
+  /* a:active{
+    border:1px solid black;
+    border-radius: 25px;
+  } */
+  /* .navbar{
+    opacity:0.5;
+  } */
+  button{
+    margin-right: 30px;
+  }
+
+  .foot{
+    margin-top: 1000px;
+  }

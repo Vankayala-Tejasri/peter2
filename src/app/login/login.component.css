@@ -4,7 +4,7 @@
   border: 2px solid black;
   border-radius: 8px;
   box-shadow:10px 10px 5px grey;
-  width:35%;
+  width:32%;
   object-position:center;
   background-image: url("https://www.venops.com/wp-content/uploads/bb-plugin/cache/open_payments_ftd-square.jpg");
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@ input{
 
   font-size:15px;
 	height:40px;
-	width:85%;
+	width:80%;
 	border: 1.5px solid black;
 	border-radius:8px;
 	outline:invert;
@@ -41,6 +41,10 @@ a{
 input:invalid{
   border-color: rgb(236, 42, 84);
 }
-
-
-
+/* .container{
+  background-image: linear-gradient(pink, white,rgb(2, 1, 2));
+  background-size: cover;
+  background-attachment: fixed;
+  width:auto;
+  height: auto;
+} */

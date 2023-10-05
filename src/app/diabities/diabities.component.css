@@ -1,0 +1,83 @@
+h1 {
+    text-align: center;
+    color: #333;
+  }
+  /* styles.css */
+.styled-image {
+    width: 300px;
+    border: 2px solid black;
+}
+
+  
+  h2 {
+    margin-top: 20px;
+    color: #666;
+  }
+  
+  /* Styling for lists */
+  ul {
+    list-style-type: disc;
+    margin-left: 30px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for paragraphs */
+  p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  /* General styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  .img_deg
+{
+  float:right;
+  width:40%;
+}
+.pos_cen
+{
+  width:70%;
+  left:15%;
+  margin-bottom: 20px;
+  font-size: larger;
+  justify-content: center;
+  position: relative; 
+}
+.hi{
+    width:70%;
+    left:15%;
+    margin-bottom: 20px;
+    font-size: larger;
+    justify-content: center;
+    position: relative; 
+}
+.hello{
+    width: 70%;
+    left:15%;
+    margin-bottom: 20px;
+    font-size: larger;
+    justify-content: center;
+    position: relative;
+}
+.who{
+    width: 70%;
+    left:15%;
+    margin-bottom: 20px;
+    font-size: larger;
+    justify-content: center;
+    position: relative;
+}
+.where{
+    width: 70%;
+    left:15%;
+    margin-bottom: 20px;
+    font-size: larger;
+    justify-content: center;
+    position: relative;
+}
